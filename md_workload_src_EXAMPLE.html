@@ -67,7 +67,7 @@ $(function() {
 <div class="title">Fetch SVID </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Fetch SVID and Bundles for C and C++ example.</p>
+<div class="textblock"><p>Fetch SVID and Bundles for C and C++ example. </p>
 <h2><a class="anchor" id="autotoc_md25"></a>
 Client object</h2>
 <div class="fragment"><div class="line">err_t error;</div>
@@ -150,7 +150,10 @@ SVID JWT</h2>
 <h2><a class="anchor" id="autotoc_md36"></a>
 Compiling</h2>
 <p>Always compile with make.</p>
-<p>Run examples: </p><div class="fragment"><div class="line">./c_client svid_type=x509</div>
+<p>Run examples: </p><div class="fragment"><div class="line">./c_client_validate token1.txt spiffe://example.org/audience1</div>
+<div class="line">./c_client_validate token2 spiffe://www.spiffe.org/aud1/path1</div>
+<div class="line"> </div>
+<div class="line">./c_client svid_type=x509</div>
 <div class="line">./c_client svid_type=jwt</div>
 <div class="line">./cpp_client svid_type=x509</div>
 <div class="line">./cpp_client svid_type=jwt</div>
