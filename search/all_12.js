@@ -33,7 +33,7 @@ var searchData=
   ['source_2eh_398',['source.h',['../bundle_2jwtbundle_2src_2source_8h.html',1,'(Global Namespace)'],['../bundle_2x509bundle_2src_2source_8h.html',1,'(Global Namespace)'],['../svid_2x509svid_2src_2source_8h.html',1,'(Global Namespace)']]],
   ['source_5fsuite_399',['source_suite',['../check__source_8c.html#a8b065f6549f3ae891c3a31fdfbd48cab',1,'check_source.c']]],
   ['special_400',['SPECIAL',['../COPYING-CMAKE-SCRIPTS_8txt.html#ad2dc028cf51b75eb6b530ed8b0a88051',1,'COPYING-CMAKE-SCRIPTS.txt']]],
-  ['spiffe_20tls_20dial_401',['SPIFFE TLS Dial',['../md_spiffetls_src_EXAMPLE.html',1,'']]],
+  ['spiffe_20tls_20listen_401',['SPIFFE TLS Listen',['../md_spiffetls_src_EXAMPLE.html',1,'']]],
   ['spiffebundle_5fbundle_402',['spiffebundle_Bundle',['../structspiffebundle__Bundle.html',1,'']]],
   ['spiffebundle_5fbundle_5faddjwtauthority_403',['spiffebundle_Bundle_AddJWTAuthority',['../spiffebundle_2src_2bundle_8h.html#ac336bac213c6a3d39ab7077350a5c9ab',1,'spiffebundle_Bundle_AddJWTAuthority(spiffebundle_Bundle *b, const string_t keyID, EVP_PKEY *auth):&#160;bundle.c'],['../spiffebundle_2src_2bundle_8c.html#ac336bac213c6a3d39ab7077350a5c9ab',1,'spiffebundle_Bundle_AddJWTAuthority(spiffebundle_Bundle *b, const string_t keyID, EVP_PKEY *auth):&#160;bundle.c']]],
   ['spiffebundle_5fbundle_5faddx509authority_404',['spiffebundle_Bundle_AddX509Authority',['../spiffebundle_2src_2bundle_8c.html#ad3b0e042957482fc9c2abe487f165376',1,'spiffebundle_Bundle_AddX509Authority(spiffebundle_Bundle *b, X509 *auth):&#160;bundle.c'],['../spiffebundle_2src_2bundle_8h.html#ad3b0e042957482fc9c2abe487f165376',1,'spiffebundle_Bundle_AddX509Authority(spiffebundle_Bundle *b, X509 *auth):&#160;bundle.c']]],
