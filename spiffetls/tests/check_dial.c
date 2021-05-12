@@ -89,13 +89,13 @@ START_TEST(test_spiffetls_DialWithMode)
     sleep(1);
     test_TLSClientWithRawConfig();
 
-    system("./tls_server 40002 &");
-    sleep(1);
-    test_MTLSClient();
+    // system("./tls_server 40002 &");
+    // sleep(1);
+    // test_MTLSClient();
 
-    system("./tls_server 40003 &");
-    sleep(1);
-    test_MTLSWebClient();
+    // system("./tls_server 40003 &");
+    // sleep(1);
+    // test_MTLSWebClient();
 }
 END_TEST
 

@@ -57,6 +57,14 @@ SSL *spiffetls_ListenWithMode(in_port_t port, spiffetls_ListenMode *mode,
         if(!source) {
             source = workloadapi_NewX509Source(NULL, err);
             if(*err) {
+                // could not create source
+                *err = ERROR1;
+                goto error;
+            }
+
+            *err = workloadapi_X509Source_Start(source);
+            if(*err) {
+                // could not start source
                 *err = ERROR1;
                 goto error;
             }
@@ -82,12 +90,23 @@ SSL *spiffetls_ListenWithMode(in_port_t port, spiffetls_ListenMode *mode,
 
     switch(mode->mode) {
     case TLS_SERVER_MODE:
-        tlsconfig_HookTLSServerConfig(tls_config, mode->svid, NULL);
+    {
+        if(!tlsconfig_HookTLSClientConfig(tls_config, mode->bundle,
+                                          mode->authorizer, NULL)) {
+            *err = ERROR3;
+            goto error;
+        }
         break;
+    }
     case MTLS_SERVER_MODE:
-        tlsconfig_HookMTLSServerConfig(tls_config, mode->svid, mode->bundle,
-                                       mode->authorizer, NULL);
+    {
+        if(!tlsconfig_HookTLSClientConfig(tls_config, mode->bundle,
+                                          mode->authorizer, NULL)) {
+            *err = ERROR3;
+            goto error;
+        }
         break;
+    }
     case MTLS_WEBSERVER_MODE:
     default:
         // unknown mode

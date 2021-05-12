@@ -21,6 +21,7 @@ bool x509svid_Verify_cb(X509_STORE_CTX *store_ctx, x509bundle_Source *source,
             x509bundle_Bundle *bundle
                 = x509bundle_Source_GetX509BundleForTrustDomain(
                     source, spiffeid_ID_TrustDomain(leaf_id), &err);
+            printf("td: %s\n", leaf_id.td.name);
 
             if(!err && bundle) {
                 // get root certificates and add them to local store
