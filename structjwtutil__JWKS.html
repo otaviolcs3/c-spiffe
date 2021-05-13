@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C-SPIFFE Library: _ec_keydata_int Struct Reference</title>
+<title>C-SPIFFE Library: jwtutil_JWKS Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,51 +65,61 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct__ec__keydata__int-members.html">List of all members</a>  </div>
+<a href="structjwtutil__JWKS-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_ec_keydata_int Struct Reference</div>  </div>
+<div class="title">jwtutil_JWKS Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="internal_2jwtutil_2src_2util_8h_source.html">util.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for jwtutil_JWKS:</div>
+<div class="dyncontent">
+<div class="center"><img src="structjwtutil__JWKS__coll__graph.png" border="0" usemap="#ajwtutil__JWKS_coll__map" alt="Collaboration graph"/></div>
+<map name="ajwtutil__JWKS_coll__map" id="ajwtutil__JWKS_coll__map">
+<area shape="rect" title=" " alt="" coords="36,95,136,121"/>
+<area shape="rect" href="structmap__string__EVP__PKEY.html" title=" " alt="" coords="5,5,167,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a400dbb5e500c7000c2329496546c8a1c"><td class="memItemLeft" align="right" valign="top">cjose_jwk_ec_curve&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ec__keydata__int.html#a400dbb5e500c7000c2329496546c8a1c">crv</a></td></tr>
-<tr class="separator:a400dbb5e500c7000c2329496546c8a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0aedf929c37da076e97412d1e366e9"><td class="memItemLeft" align="right" valign="top">EC_KEY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__ec__keydata__int.html#a2b0aedf929c37da076e97412d1e366e9">key</a></td></tr>
-<tr class="separator:a2b0aedf929c37da076e97412d1e366e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2900777be729ffd214d681cc9d88192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmap__string__EVP__PKEY.html">map_string_EVP_PKEY</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjwtutil__JWKS.html#ad2900777be729ffd214d681cc9d88192">jwt_auths</a></td></tr>
+<tr class="separator:ad2900777be729ffd214d681cc9d88192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4451e0734f67d3fd149b1ce3463af7"><td class="memItemLeft" align="right" valign="top">X509 **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjwtutil__JWKS.html#a5a4451e0734f67d3fd149b1ce3463af7">x509_auths</a></td></tr>
+<tr class="separator:a5a4451e0734f67d3fd149b1ce3463af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a400dbb5e500c7000c2329496546c8a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a400dbb5e500c7000c2329496546c8a1c">&#9670;&nbsp;</a></span>crv</h2>
+<a id="ad2900777be729ffd214d681cc9d88192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2900777be729ffd214d681cc9d88192">&#9670;&nbsp;</a></span>jwt_auths</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">cjose_jwk_ec_curve _ec_keydata_int::crv</td>
+          <td class="memname"><a class="el" href="structmap__string__EVP__PKEY.html">map_string_EVP_PKEY</a>* jwtutil_JWKS::jwt_auths</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2b0aedf929c37da076e97412d1e366e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b0aedf929c37da076e97412d1e366e9">&#9670;&nbsp;</a></span>key</h2>
+<a id="a5a4451e0734f67d3fd149b1ce3463af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4451e0734f67d3fd149b1ce3463af7">&#9670;&nbsp;</a></span>x509_auths</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EC_KEY * _ec_keydata_int::key</td>
+          <td class="memname">X509** jwtutil_JWKS::x509_auths</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li>bundle/jwtbundle/src/<a class="el" href="jwtbundle_2src_2bundle_8c.html">bundle.c</a></li>
-<li>internal/jwtutil/src/<a class="el" href="internal_2jwtutil_2src_2util_8c.html">util.c</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>internal/jwtutil/src/<a class="el" href="internal_2jwtutil_2src_2util_8h_source.html">util.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
