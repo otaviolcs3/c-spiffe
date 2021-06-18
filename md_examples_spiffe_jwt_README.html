@@ -88,7 +88,7 @@ $(function() {
 </div><!-- fragment --><p>The server creates a <code><a class="el" href="structworkloadapi__JWTSource.html">workloadapi_JWTSource</a></code> to obtain up-to-date JWT bundles from the Workload API.</p>
 <div class="fragment"><div class="line">{C++}</div>
 <div class="line">   workloadapi_JWTSource *jwtsource = workloadapi_NewJWTSource(NULL, &amp;err);</div>
-</div><!-- fragment --><p>A middleware is added to authenticate client JWT-SVIDs provided in the <code>Authorization</code> header. This middleware validates the token using the [jwtsvid.ParseAndValidate](using bundles obtained from the <a class="el" href="structworkloadapi__JWTSource.html">workloadapi_JWTSource</a>).</p>
+</div><!-- fragment --><p>A middleware is added to authenticate client JWT-SVIDs provided in the <code>Authorization</code> header. This middleware validates the token using the [jwtsvid_ParseAndValidate](using bundles obtained from the <a class="el" href="structworkloadapi__JWTSource.html">workloadapi_JWTSource</a>).</p>
 <div class="fragment"><div class="line">{C++}</div>
 <div class="line">   err_t err;</div>
 <div class="line">   jwtsvid_SVID *svid</div>
