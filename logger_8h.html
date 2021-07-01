@@ -73,14 +73,22 @@ $(function() {
 <div class="title">logger.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="utils_2util_8h_source.html">utils/util.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for logger.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="logger_8h__incl.png" border="0" usemap="#alogger_2logger_8h" alt=""/></div>
 <map name="alogger_2logger_8h" id="alogger_2logger_8h">
-<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
-<area shape="rect" title=" " alt="" coords="29,80,89,107"/>
+<area shape="rect" title=" " alt="" coords="253,5,359,32"/>
+<area shape="rect" href="utils_2util_8h.html" title=" " alt="" coords="221,80,298,107"/>
+<area shape="rect" title=" " alt="" coords="323,80,383,107"/>
+<area shape="rect" href="stb__ds_8h.html" title=" " alt="" coords="79,155,178,181"/>
+<area shape="rect" title=" " alt="" coords="185,229,249,256"/>
+<area shape="rect" title=" " alt="" coords="253,155,356,181"/>
+<area shape="rect" title=" " alt="" coords="381,155,455,181"/>
+<area shape="rect" title=" " alt="" coords="5,229,73,256"/>
+<area shape="rect" title=" " alt="" coords="97,229,160,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -88,8 +96,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="logger_8h__dep__incl.png" border="0" usemap="#alogger_2logger_8hdep" alt=""/></div>
 <map name="alogger_2logger_8hdep" id="alogger_2logger_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
-<area shape="rect" href="logger_8c.html" title=" " alt="" coords="5,80,112,107"/>
+<area shape="rect" title=" " alt="" coords="76,5,183,32"/>
+<area shape="rect" href="logger_8c.html" title=" " alt="" coords="5,87,112,114"/>
+<area shape="rect" href="check__logger_8c.html" title=" " alt="" coords="137,80,266,121"/>
 </map>
 </div>
 </div>
@@ -97,70 +106,28 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a81c26ca6fcc74cd3679ad212cc0344a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a81c26ca6fcc74cd3679ad212cc0344a9">logger_InitLoggers</a> (void)</td></tr>
-<tr class="separator:a81c26ca6fcc74cd3679ad212cc0344a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8e287f76066f590ff31ee75756f3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#afe8e287f76066f590ff31ee75756f3b8">loffer_Debug_Init</a> (void)</td></tr>
-<tr class="separator:afe8e287f76066f590ff31ee75756f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ea98aac6bb6147faa456ec3212a868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a97ea98aac6bb6147faa456ec3212a868">logger_Init</a> (void)</td></tr>
+<tr class="separator:a97ea98aac6bb6147faa456ec3212a868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e70e38416bf62747ae9804e9ca6873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a93e70e38416bf62747ae9804e9ca6873">logger_Debug_Init</a> (void)</td></tr>
+<tr class="separator:a93e70e38416bf62747ae9804e9ca6873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4f31ecfdc9ccc560037ad55f1956ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#aed4f31ecfdc9ccc560037ad55f1956ad">logger_Debug_BufferSize</a> (void)</td></tr>
+<tr class="separator:aed4f31ecfdc9ccc560037ad55f1956ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7200264607cc8ba204219b3aad822c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a7200264607cc8ba204219b3aad822c29">logger_Debug_FmtPush</a> (const char *fmt,...)</td></tr>
 <tr class="separator:a7200264607cc8ba204219b3aad822c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6b2f9e0ebb2f8dc187223a2da7d1e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a3f6b2f9e0ebb2f8dc187223a2da7d1e1">loffer_Debug_Push</a> (const char *str)</td></tr>
-<tr class="separator:a3f6b2f9e0ebb2f8dc187223a2da7d1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa90e38caa916c4e984ed53a48a2201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#adaa90e38caa916c4e984ed53a48a2201">logger_Debug_Push</a> (const char *str)</td></tr>
+<tr class="separator:adaa90e38caa916c4e984ed53a48a2201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253e66a1603a62487ef3f5512c932848"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a253e66a1603a62487ef3f5512c932848">logger_Debug_Back</a> (void)</td></tr>
 <tr class="separator:a253e66a1603a62487ef3f5512c932848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2826a173b5b5acbed43d4c529f50aebc"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a2826a173b5b5acbed43d4c529f50aebc">logger_Debug_Pop</a> (void)</td></tr>
-<tr class="separator:a2826a173b5b5acbed43d4c529f50aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d7957c624535f0ed68e03733158b9f3"><td class="memItemLeft" align="right" valign="top">const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a5d7957c624535f0ed68e03733158b9f3">logger_Debug_Traceback</a> (bool clean)</td></tr>
-<tr class="separator:a5d7957c624535f0ed68e03733158b9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9810945a32fd94af8d8e93a85e87dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#af9810945a32fd94af8d8e93a85e87dad">logger_Debug_Pop</a> (void)</td></tr>
+<tr class="separator:af9810945a32fd94af8d8e93a85e87dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d2354f75dfc82e8244a778800528f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a17d2354f75dfc82e8244a778800528f6">logger_Debug_Dumpf</a> (FILE *f)</td></tr>
 <tr class="separator:a17d2354f75dfc82e8244a778800528f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb47bc8a59412afde9ab8a4037c9a611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_2util_8h.html#ab0dcbec9b4b3c60b939b1095f93cb1b9">string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#afb47bc8a59412afde9ab8a4037c9a611">logger_Debug_Dumps</a> (void)</td></tr>
 <tr class="separator:afb47bc8a59412afde9ab8a4037c9a611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83dc3b7a9f04643e556feeaf38ad763c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a83dc3b7a9f04643e556feeaf38ad763c">logger_Info_Init</a> ()</td></tr>
-<tr class="separator:a83dc3b7a9f04643e556feeaf38ad763c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9501aec1eb749a342166b44d19410e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#ab9501aec1eb749a342166b44d19410e4">logger_Warn_Init</a> ()</td></tr>
-<tr class="separator:ab9501aec1eb749a342166b44d19410e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705f60bc32a5e4cf1e39c96bceae445d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a705f60bc32a5e4cf1e39c96bceae445d">logger_Error_Init</a> ()</td></tr>
-<tr class="separator:a705f60bc32a5e4cf1e39c96bceae445d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d7a5be90b0b25800c8a3f5f846bd99e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8h.html#a2d7a5be90b0b25800c8a3f5f846bd99e">logger_Cleanup</a> (void)</td></tr>
 <tr class="separator:a2d7a5be90b0b25800c8a3f5f846bd99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="afe8e287f76066f590ff31ee75756f3b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8e287f76066f590ff31ee75756f3b8">&#9670;&nbsp;</a></span>loffer_Debug_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loffer_Debug_Init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3f6b2f9e0ebb2f8dc187223a2da7d1e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f6b2f9e0ebb2f8dc187223a2da7d1e1">&#9670;&nbsp;</a></span>loffer_Debug_Push()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loffer_Debug_Push </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2d7a5be90b0b25800c8a3f5f846bd99e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d7a5be90b0b25800c8a3f5f846bd99e">&#9670;&nbsp;</a></span>logger_Cleanup()</h2>
 
@@ -188,6 +155,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const char* logger_Debug_Back </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed4f31ecfdc9ccc560037ad55f1956ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4f31ecfdc9ccc560037ad55f1956ad">&#9670;&nbsp;</a></span>logger_Debug_BufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int logger_Debug_BufferSize </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -262,14 +247,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2826a173b5b5acbed43d4c529f50aebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2826a173b5b5acbed43d4c529f50aebc">&#9670;&nbsp;</a></span>logger_Debug_Pop()</h2>
+<a id="a93e70e38416bf62747ae9804e9ca6873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e70e38416bf62747ae9804e9ca6873">&#9670;&nbsp;</a></span>logger_Debug_Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* logger_Debug_Pop </td>
+          <td class="memname">void logger_Debug_Init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -280,66 +265,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d7957c624535f0ed68e03733158b9f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d7957c624535f0ed68e03733158b9f3">&#9670;&nbsp;</a></span>logger_Debug_Traceback()</h2>
+<a id="af9810945a32fd94af8d8e93a85e87dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9810945a32fd94af8d8e93a85e87dad">&#9670;&nbsp;</a></span>logger_Debug_Pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char** logger_Debug_Traceback </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>clean</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a705f60bc32a5e4cf1e39c96bceae445d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a705f60bc32a5e4cf1e39c96bceae445d">&#9670;&nbsp;</a></span>logger_Error_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logger_Error_Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a83dc3b7a9f04643e556feeaf38ad763c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83dc3b7a9f04643e556feeaf38ad763c">&#9670;&nbsp;</a></span>logger_Info_Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logger_Info_Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a81c26ca6fcc74cd3679ad212cc0344a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81c26ca6fcc74cd3679ad212cc0344a9">&#9670;&nbsp;</a></span>logger_InitLoggers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logger_InitLoggers </td>
+          <td class="memname">void logger_Debug_Pop </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -350,20 +283,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9501aec1eb749a342166b44d19410e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9501aec1eb749a342166b44d19410e4">&#9670;&nbsp;</a></span>logger_Warn_Init()</h2>
+<a id="adaa90e38caa916c4e984ed53a48a2201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa90e38caa916c4e984ed53a48a2201">&#9670;&nbsp;</a></span>logger_Debug_Push()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void logger_Warn_Init </td>
+          <td class="memname">void logger_Debug_Push </td>
           <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97ea98aac6bb6147faa456ec3212a868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ea98aac6bb6147faa456ec3212a868">&#9670;&nbsp;</a></span>logger_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void logger_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TODO: init all loggers here</p>
 
 </div>
 </div>
